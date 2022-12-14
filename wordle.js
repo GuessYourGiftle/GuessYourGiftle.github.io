@@ -1,3 +1,4 @@
+var $ = document.getElementById;
 
 var height = 6; //number of guesses
 var width = 5; //length of the word
@@ -38,7 +39,7 @@ function intialize() {
     // Create the key board
     let keyboard = [
         ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
-        ["A", "S", "D", "F", "G", "H", "J", "K", "L", " "],
+        ["A", "S", "D", "F", "G", "H", "J", "K", "L"],
         ["Enter", "Z", "X", "C", "V", "B", "N", "M", "⌫" ]
     ]
 
@@ -46,11 +47,14 @@ function intialize() {
         let currRow = keyboard[i];
         let keyboardRow = document.createElement("div");
         keyboardRow.classList.add("keyboard-row");
-
+       
+       keyboardRow.setAttribute("id", keyboard[i][0])
+       
         for (let j = 0; j < currRow.length; j++) {
             let keyTile = document.createElement("div");
-
             let key = currRow[j];
+    
+    
             keyTile.innerText = key;
             if (key == "Enter") {
                 keyTile.id = "Enter";
