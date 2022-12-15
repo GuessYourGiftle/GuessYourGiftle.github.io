@@ -165,7 +165,7 @@ function update() {
         let lastRowDocument = document.getElementById(lastRow.toString()+ '-' + c.toString());
         
         if (row !== 0){       
-        lastRowDocument.innerText = "";
+        lastRowDocument.innerText = "?";
         }
  
     
