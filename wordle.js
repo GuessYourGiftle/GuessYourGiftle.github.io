@@ -123,6 +123,7 @@ function processInput(e) {
 
 function update() {
     let guess = "";
+    let lastRow = row - 1;
     document.getElementById("answer").innerText = "";
 
     //string up the guesses into the word
@@ -159,9 +160,15 @@ function update() {
 
     //first iteration, check all the correct ones first
     for (let c = 0; c < width; c++) {
-        let currTile = document.getElementById(row.toString() + '-' + c.toString());
+        let currTile = document.getElementById(row.toString()+ '-' + c.toString());
         let letter = currTile.innerText;
-
+        let lastRowDocument = document.getElementById(lastRow.toString()+ '-' + c.toString());
+        
+        if (row !== 0){       
+        lastRowDocument.innerText = "";
+        }
+ 
+    
         //Is it in the correct position?
         if (word[c] == letter) {
             currTile.classList.add("correct");
