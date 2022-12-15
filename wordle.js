@@ -174,8 +174,8 @@ function update() {
             currTile.classList.add("correct");
 
             let keyTile = document.getElementById("Key" + letter);
-            keyTile.classList.remove("present");
-            keyTile.classList.add("correct");
+            //keyTile.classList.remove("present");
+            //keyTile.classList.add("correct");
 
             correct += 1;
             letterCount[letter] -= 1; //deduct the letter count
@@ -198,16 +198,16 @@ function update() {
             if (word.includes(letter) && letterCount[letter] > 0) {
                 currTile.classList.add("present");
                 
-                let keyTile = document.getElementById("Key" + letter);
-                if (!keyTile.classList.contains("correct")) {
-                    keyTile.classList.add("present");
-                }
+                //let keyTile = document.getElementById("Key" + letter);
+                //if (!keyTile.classList.contains("correct")) {
+                    //keyTile.classList.add("present");
+                //}
                 letterCount[letter] -= 1;
             } // Not in the word or (was in word but letters all used up to avoid overcount)
             else {
                 currTile.classList.add("absent");
-                let keyTile = document.getElementById("Key" + letter);
-                keyTile.classList.add("absent")
+                //let keyTile = document.getElementById("Key" + letter);
+                //keyTile.classList.add("absent")
             }
         }
     }
