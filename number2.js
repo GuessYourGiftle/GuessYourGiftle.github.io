@@ -179,6 +179,7 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
+            document.getElementById("answer").innerText = "Who Is Sean Kelly The Lead Singer Of?";
         }
     }
 
