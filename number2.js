@@ -15,7 +15,7 @@ var guessList = ["aahed", "aalii", "aargh", "aarti", "abaca", "abaci", "abacs", 
 
 guessList = guessList.concat(wordList);
 
-var word = "PERRY"
+var word = "KELLY"
 console.log(word);
 
 window.onload = function(){
