@@ -179,6 +179,7 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
+            document.getElementById("answer").innerText = "Where Is The Best Steak Near Us?";
         }
     }
 
