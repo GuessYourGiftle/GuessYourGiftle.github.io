@@ -163,7 +163,7 @@ function update() {
         let currTile = document.getElementById(row.toString()+ '-' + c.toString());
         let letter = currTile.innerText;
         let lastRowDocument = document.getElementById(lastRow.toString()+ '-' + c.toString());
-      
+ 
         //Is it in the correct position?
         if (word[c] == letter) {
             currTile.classList.add("correct");
@@ -178,7 +178,6 @@ function update() {
 
         if (correct == width) {
             gameOver = true;
-            document.getElementById("answer").innerText = "Who Does Steve Perry Sing For?";
         }
     }
 
