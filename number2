@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Giftle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="icon" type="image/x-icon" href="https://project-lulo.github.io/Forgetle/favicon.png">
+        <link rel="stylesheet" href="wordle.css">
+         <script src="number2.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title">Giftle #1</h1>
+        <a class="next" href="/number2/">Next Puzzle</a>
+        <hr>
+        <br>
+        <div id="board">
+        </div>
+
+        <br>
+        <h1 id="answer"></h1>
+    </body>
+</html>
